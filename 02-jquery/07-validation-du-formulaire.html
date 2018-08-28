@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>validation-du-formulaire</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="">
+    <style>
+        /* label{color: rgb(255, 101, 101)}
+        form{height: auto; width: 400px; margin: 0 auto; margin-top: 2vh;}
+        button{margin-top: 20px; width: 400px; margin: 0 auto;} */
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- <form>
+            <div class="form-group">
+                <label for="exampleInputNom">Nom :</label>
+                <input type="name" class="form-control" id="exampleInputNom" aria-describedby="nameHelp" placeholder="Enter Name">
+
+                <label for="exampleInputPrenom">Prenom :</label>
+                <input type="prenom" class="form-control" id="exampleInputPrenom" aria-describedby="PrenomHelp" placeholder="Enter Prenom">
+
+                <label for="exampleInputTel">Tel :</label>
+                <input type="tel" class="form-control" id="exampleInputTel" aria-describedby="TelHelp" placeholder="Enter Tel">
+
+                <label for="exampleInputEmail1">Email address :</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+
+        </form> -->
+
+        <!-- correction de form -->
+        <main class="container">
+
+        <header class="row">
+            <div class="col">
+                <h1 class="text-center">Contactez-nous</h1>
+            </div>
+        </header>
+
+        <section class="row">
+            <div class="col">
+
+                <form novalidate id="contact" class="form-horizontal">
+                    <!-- novalidate use for not validate html5 -->
+
+                    <!-- Nom -->
+                    <div class="form-group">
+                        <label for="nom">Nom</label>
+                        <input type="text" required
+                            placeholder="Saisissez votre Nom"
+                            class="form-control" id="nom">
+                        <div class="invalid-feedback">
+                            vous devez sasir votre nom
+                        </div>
+                        <div class="valid-feedback">
+                            Valide
+                        </div>
+                    </div>
+
+                    <!-- Prénom -->
+                    <div class="form-group">
+                        <label for="prenom">Prénom</label>
+                        <input type="text" required
+                            placeholder="Saisissez votre Prénom"
+                            class="form-control" id="prenom">
+                        <div class="invalid-feedback">
+                            vous devez sasir votre prenom
+                        </div>
+                        <div class="valid-feedback">
+                            Valide
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" required
+                            placeholder="Saisissez votre Email"
+                            class="form-control" id="email">
+                        <div class="invalid-feedback">
+                            vous devez sasir votre email
+                        </div>
+                        <div class="valid-feedback">
+                            Valide
+                        </div>
+                    </div>
+
+                    <!-- Tel -->
+                    <div class="form-group">
+                        <label for="tel">Tel</label>
+                        <input type="tel" required
+                            placeholder="Saisissez votre Tel"
+                            class="form-control" id="tel">
+                        <div class="invalid-feedback">
+                            vous devez sasir votre tel
+                        </div>
+                        <div class="valid-feedback">
+                            Valide
+                        </div>
+                    </div>
+
+                    <!-- Bouton de soumission -->
+                    <div class="form-group">
+                        <button type="submit"
+                            class="btn btn-primary btn-block">
+                            Envoyer ma demande
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"> </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"> </script>
+    <script src="assets/js/07-validation-du-formulaire.js"></script>
+</body>
+</html>
