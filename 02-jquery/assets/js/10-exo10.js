@@ -13,24 +13,8 @@
 
 $(function(){
 
-    /* ******************************************************** */
-    $('#markJS').on("keyup", function () {
-        var keyword = $(this).val(),
-            options = {
-                "element": "span",
-                "className": "markBlue",
-                "separateWordSearch": true
-            },
-            $ctx = $(".context table tr td:nth-child(1)");
-        $ctx.unmark({
-            done: function () {
-                $ctx.mark(keyword, options);
-            }
-        });
-    });
-    /* ********************************************************* */
 
-     $.getJSON('https://jsonplaceholder.typicode.com/posts').done(function (data) {
+/*      $.getJSON('https://jsonplaceholder.typicode.com/posts').done(function (data) {
                 
                  console.log(data);
                  console.log(data[0].id);
@@ -38,7 +22,7 @@ $(function(){
                  console.log(data[0].title);
                  console.log(data[0].body);
 
-                 for(let i = 0; i < data.length; i++){
+         for (let i = 0; i < data.length; i++){
 
                  $(`<p> 
                         ID : ${data[i].id} <br><br>
@@ -48,11 +32,52 @@ $(function(){
                                      
                    </p> <br>`).appendTo('article');
 
-                //    if ($('#markJS').val() === data.find('id')) {
-                //        alert('got it');
-                //        break;
-                //    }
+                 } // end of for
 
-                 }
+    }); //end of  $.getJSON
+
+    $('#markJS').on('input', function () {
+        let keyword = $(this).val();
+        $('section').unmark().mark(keyword);
+    }); */
+
+
+
+
+    /* correction */
+    $.ajax('https://jsonplaceholder.typicode.com/posts').done(function (articles) {
+        console.log(articles);
+        //--2. je parcours les articals et je les affiches sur la page
+        $.each(articles, function (index, article){
+            //-- vérification dans ma console
+            console.log(index + ' ' + article.title);
+            //-- affichage dans ma page
+            $(`
+                <section>
+                    <header>
+                        <h1>${article.title}</h1>
+                    </header>
+                    <article>
+                        ${article.body}
+                    </article>
+                </section>
+            `).appendTo($('main'));
+            if(index === 9){
+                return false;
+            }
+            
+
+        });  // end of $each
+        
+    }); // end of $.ajax
+    $('#markJS').on('input', function(){
+        const keyword = $(this).val(); 
+        $('section').unmark().mark(keyword);
+        //$('section').unmark().mark($(this).val());
+
     });
+
 }); /* end of jQuery */
+
+
+
