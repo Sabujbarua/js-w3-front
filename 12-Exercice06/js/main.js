@@ -53,7 +53,7 @@ CONSIGNE :
 $(function(){
 
     //-- 1. Ecoutez la saisie de l'utilisateur
-    $('#search').on('change', function(){
+    $('#search').on('change', function (event) {
 
         //-- 2. Recuperation de la valeur saisie
         var search = $(this).val();
