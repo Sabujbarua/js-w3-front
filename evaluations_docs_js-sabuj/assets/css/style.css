@@ -1,0 +1,68 @@
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+.card2 {
+    height: 5vh;
+    background: #061339;
+    border-radius: 0 0;
+}
+
+.card p{
+    line-height: 5vh;
+    margin-left: 20vw;
+    color: aliceblue;
+    font-size: 1em;
+    font-family: 'Merienda', cursive;
+}
+
+.bgImg {
+    background: url(../img/background.jpg);
+    height: 20vh;
+    width: 100vw;
+}
+
+.bgImg h1{
+    font-family: 'Merienda', cursive;
+    color: #FFF;
+    text-align: center;
+    line-height: 20vh;
+}
+h4, h3{
+    font-family: 'Merienda', cursive;
+}
+
+.d-block {
+   height: 46.2vh;
+}
+
+.tete-chat{
+    height: 28vh;
+    width: 17vw;
+    background: #7885A5;
+    margin: 0;
+    padding: 0;
+}
+.tete-chat:hover{
+    height: 28vh;
+    width: 17vw;
+    background: #061339;
+    margin: 0;
+    padding: 0;
+}
+
+.bgFooter{
+    background: #dedede;
+}
+
+.footer{
+    height: 40px;
+    width: 100%;
+    background: #061339;
+}
+.footer p{
+    color: white;
+    line-height: 40px;
+    margin-left: 92%;
+}

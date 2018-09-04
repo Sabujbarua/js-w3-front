@@ -93,9 +93,11 @@ margin-top: -18.7vh;
 input, textarea{
     margin: 5px;
 }
-#submit {
-    margin-left: 23em;
-    margin-bottom: 20px;
+
+
+.subBtn {
+    margin-left: 43%;
+    margin-bottom: 40px;
 }
 
 .card-footer {
