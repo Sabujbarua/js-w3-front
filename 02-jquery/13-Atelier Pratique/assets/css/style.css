@@ -1,0 +1,115 @@
+body {
+    background: #000;
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.myNav{background: rgb(34, 34, 34);}
+
+nav ul li a{color: white;}
+
+nav ul li a i{color: rgb(177, 176, 176);}
+
+.divMenu{
+    background: #141414;
+}
+.imgMenu{
+    margin-left: 30.5em;
+}
+
+.iphone7 {
+    
+}
+
+.hero_large{
+    /* width: 100%;
+    padding: 0px 0px; */
+    position: absolute;
+    z-index: -1;
+    margin-left: -31.6em;
+    margin-top: 17vh;
+}
+h3{
+    color: #DDDDDE;
+}
+
+.card-body h2, p{
+    color: #636262;
+}
+
+.container{
+    margin-top: 53vh;
+    margin-right: 10%;
+}
+.container div{
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.iphoneBG{
+    background: rgb(223, 218, 218);
+    height: 50vh;
+    margin-top: 56vh;
+}
+
+.iphoneBG div{
+    text-align: center;
+    margin-left: 23vw;
+}
+
+.iphone{
+float: left;
+margin-left: 20vw;
+margin-top: -18.7vh;
+}
+
+.conFluid{
+    background: #000;
+}
+
+.divForm{
+    width: 50vw;
+    margin: 0 auto;
+    background: #000;
+}
+
+.form{
+    padding: 20px 0;
+}
+
+.contact{
+    text-align: center;
+    margin: 20px;
+    color: #DDDDDE;
+}
+
+input, textarea{
+    margin: 5px;
+}
+
+
+.subBtn {
+    margin-left: 43%;
+    margin-bottom: 40px;
+}
+
+.card-footer {
+    background: rgb(41, 41, 41);
+}
+
+footer div p{
+    text-align: center;
+    color: #DDDDDE;
+}
+
+
+.clear{
+    clear: both;
+}
