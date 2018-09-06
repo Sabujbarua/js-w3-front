@@ -5,17 +5,9 @@
  */
 import { Component } from '@angular/core';
 import {log} from 'util';
+import {Contact} from './shared/models/contact';
 
-class Contact {
-  id: number;
-  name: string;
-  username: string;
-  email: string;
-  address?: object;
-  phone?: number;
-  website?: string;
-  company?: object;
-}
+
 
 /**
  * @Component est ce qu'on apple un décorateur.
@@ -97,7 +89,15 @@ export class AppComponent {
     ];
 
 
+
   showContact(contactCliqueParMonUtilisateur: Contact) {
     this.contactActif = contactCliqueParMonUtilisateur;
   }
+
+  addContactToArray(nouveauContact: Contact) {
+
+    this.mesContacts.push(nouveauContact);
+  }
+
+
 }

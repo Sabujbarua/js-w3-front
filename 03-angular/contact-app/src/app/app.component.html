@@ -27,39 +27,25 @@
                (click)="showContact(contact)"
             >
               {{contact.name}}
-              <!--{{contact.username}} <br>-->
-              <!--{{contact.email}} <br>-->
-              <!--{{contact.id}}-->
-              <!--<pre>-->
-                <!--{{contact | json}}-->
-              <!--</pre>-->
+
             </a>
 
           </div>
+
+          <!--$event: contient- les données de notre évènement.
+          à savoir: le nouveau contact.
+          -->
+          <app-create (unContactEstCree)="addContactToArray($event)"></app-create>
+
         </div>
 
         <div class="col-sm-8">
-          <div class="jumbotron" *ngIf="contactActif">
-            <h1 class="display-4">
-              {{contactActif.name}}
-            </h1>
-            <p class="lead">
-              {{contactActif.username}} <br>
-              {{contactActif.email}}
-            </p>
-            <hr class="my-4">
-          </div>
-
-          <div class="jumbotron" *ngIf="!contactActif">
-            <h1 class="display-4">
-              Welcome !
-            </h1>
-            <p class="lead">
-              Choose a Contact...
-            </p>
-          </div>
+            <app-profil [contactProfil]="contactActif"></app-profil>
         </div>
       </div>
+    <!--<pre>-->
+      <!--{{co}}-->
+    <!--</pre>-->
 
 
 

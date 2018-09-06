@@ -1,0 +1,22 @@
+<div class="jumbotron" *ngIf="contactProfil">
+  <h1 class="display-4">
+    {{contactProfil.name}}
+  </h1>
+  <p class="lead">
+    {{contactProfil.username}} <br>
+    {{contactProfil.email}}
+  </p>
+  <hr class="my-4">
+  <input type="text"
+         [(ngModel)]="contactProfil.name"
+         class="form-control">
+</div>
+
+<div class="jumbotron" *ngIf="!contactProfil">
+  <h1 class="display-4">
+    Welcome !
+  </h1>
+  <p class="lead">
+    Choose a Contact...
+  </p>
+</div>
