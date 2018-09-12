@@ -1,0 +1,94 @@
+<!--
+  Generated template for the SignupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Sign up here</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <section class="row">
+        <div class="col">
+
+            <form novalidate id="contact" class="form-horizontal">
+                <!-- novalidate use for not validate html5 -->
+
+                <!-- Nom -->
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" required
+                        placeholder="Saisissez votre Nom"
+                        class="form-control" id="nom">
+                    <div class="invalid-feedback">
+                        vous devez sasir votre nom
+                    </div>
+                    <div class="valid-feedback">
+                        Valide
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" required
+                        placeholder="Saisissez votre Email"
+                        class="form-control" id="email">
+                    <div class="invalid-feedback">
+                        vous devez sasir votre email
+                    </div>
+                    <div class="valid-feedback">
+                        Valide
+                    </div>
+                </div>
+
+                <!-- Prénom -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="text" required
+                        placeholder="Saisissez votre Prénom"
+                        class="form-control" id="password">
+                    <div class="invalid-feedback">
+                        vous devez sasir votre prenom
+                    </div>
+                    <div class="valid-feedback">
+                        Valide
+                    </div>
+                </div>
+
+                <!-- Tel -->
+                <div class="form-group">
+                    <label for="tel">Tel</label>
+                    <input type="tel" required
+                        placeholder="Saisissez votre Tel"
+                        class="form-control" id="tel">
+                    <div class="invalid-feedback">
+                        vous devez sasir votre tel
+                    </div>
+                    <div class="valid-feedback">
+                        Valide
+                    </div>
+                </div>
+
+                <!-- Bouton de soumission -->
+                <div class="form-group">
+                    <button type="submit"
+                        class="btn btn-primary btn-block">
+                        Envoyer ma demande
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+
+
+</ion-content>
